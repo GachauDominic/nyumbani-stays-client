@@ -12,10 +12,10 @@ export function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar-inner">
-        <NavLink to="/" className="brand">
-          <img src="../../public/NyumbaniStays_1.jpg" alt="logo" className="max-w-50 md:hidden"/>
-           Nyumbani<span>Stays</span>
+      <div className="navbar-inner flex ">
+        <NavLink to="/" className="brand flex flex-row justify-center items-center gap-2">
+          <img src="../../public/NyumbaniStays_1.jpg" alt="logo" className="hidden md:block max-w-50"/>
+           <span className="md:hidden">Nyumbani<span>Stays</span></span>
         </NavLink>
 
         <nav className="nav-links">
@@ -48,6 +48,33 @@ export function Navbar() {
               <button type="button" className="btn btn-ghost" onClick={handleLogout}>
                 Log out
               </button>
+
+              <label class="btn btn-circle swap swap-rotate">
+                {/* this hidden checkbox controls the state  */}
+                <input type="checkbox" />
+
+                 {/* hamburger icon  */}
+                <svg
+                  class="swap-off fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512">
+                  <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+
+                {/* close icon */}
+                <svg
+                  class="swap-on fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512">
+                  <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                </svg>
+              </label>
+              
             </>
           ) : (
             <>

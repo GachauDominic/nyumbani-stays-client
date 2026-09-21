@@ -44,7 +44,7 @@ export function LandingPage() {
         </div>
         <div className="feature">
           <h3>For hosts</h3>
-          <p>List rooms, manage bookings and approvals, track payments, and keep an eye on guest reviews — all in one dashboard.</p>
+          <p>List rooms, manage bookings and approvals, track payments, and keep an eye on guest reviews all in one dashboard.</p>
         </div>
         <div className="feature">
           <h3>Simple &amp; transparent</h3>
