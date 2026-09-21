@@ -18,6 +18,7 @@ import { HostGuestsPage } from "./pages/host/HostGuestsPage";
 import { HostPaymentsPage } from "./pages/host/HostPaymentsPage";
 import { HostReviewsPage } from "./pages/host/HostReviewsPage";
 import { HostApprovalsPage } from "./pages/host/HostApprovalsPage";
+import Footer from "./components/Footer";
 
 function SessionExpiredBanner() {
   const { sessionExpiredNotice, dismissExpiredNotice } = useAuth();
@@ -146,6 +147,8 @@ function App() {
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Routes>
       </main>
+
+      <Footer />
     </div>
   );
 }
