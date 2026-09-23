@@ -49,7 +49,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Proactively log out when the token expires instead of waiting on a 401.
   // This matters a lot for guest sessions: the backend currently issues
-  // guest tokens with only a ~60 second lifetime (see guest.controller.ts),
+  // guest tokens with only a 1 hr lifetime (see guest.controller.ts),
   // so this timer is what keeps the UI honest about being signed out.
   useEffect(() => {
     if (!session) return;

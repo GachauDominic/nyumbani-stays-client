@@ -33,7 +33,7 @@ function extractMessage(data: unknown, fallback: string): string {
     const record = data as Record<string, unknown>;
     if (typeof record.message === "string") return record.message;
     if (typeof record.error === "string") return record.error;
-    if (typeof record.erro === "string") return record.erro; // typo present in the payments controller
+    if (typeof record.error === "string") return record.error; 
   }
   return fallback;
 }

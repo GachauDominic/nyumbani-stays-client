@@ -1,6 +1,5 @@
 // Lightweight helper to peek at a JWT's payload on the client.
-// This never verifies the signature - it only reads `exp` so the UI
-// can proactively log the user out instead of waiting for a 401.
+// This never verifies the signature - it only reads `exp` so the UI can proactively log the user out instead of waiting for a 401.
 
 interface JwtPayload {
   exp?: number;
